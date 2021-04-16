@@ -1,100 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Softech</title>
-		
-		<meta name="keywords" content="Softech, informática, venta, software, La Rioja, Argentina." />
+<head>
+	<title>SofTech</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta author="Juan Pablo Millicay">
+    <meta name="keywords" content="Softech, informática, venta, software, La Rioja, Argentina." />
         <meta name="description" content="Softech, Venta y Servicios de Informatica." />
+
+   <!-- css -->      
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- scripts -->
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+  
+</head>
+<body>
+
+	<header>
+	<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt="Softech, Tecnología Informática"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Empresa</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Nootebook</a></li>
+            <li><a href="#">Computadoras</a></li>
+            <li><a href="#">Desarrollo Software</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
     
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="row">
-					<nav class="navbar">
-						<div class="navbar-container">
-							<a href="index.html" class="navbar-brand">
-								<span>SofTech</span>
-							</a>
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-								<i class="fa fa-bars fa-2x"></i>
-							</button>			
-							<div class="collapse navbar-collapse" id="menu">
-							  <ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="index.html">Inicio</a></li>
-								<li><a href="empresa.html">Empresa</a></li>
-								<li><a href="servcios.html">Servicios</a></li>
-								<li><a href="contacto.html">Contacto</a></li>
-							  </ul>
-							</div>
-						</div>
-					</nav>	
-				</div>
-			  </div>
-		</header>
-		<section id="slider" class="owl-carousel main-slider">
-			<div class="item" style="background-image:url(images/slide1.jpg)">
-				<div class="container">
-					<div class="caption">
-						<h1><span>Insumos Informaticos</span></h1>
-						<p><span>Venta por mayor</span></p>
-						<p><span>Importados y Nacionales</span></p>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-			
-		<section>
-			<div class="card" style="width: 18rem;">
-				<img class="card-img-top" src="images/pc.webp" alt="Nootebook HP">
-				<div class="card-body">
-				  <h1 class="card-title">Notebook HP 240 G7</h1>
-				  <h3 class="card-sub-title">$59.999</h3>
-				  <p class="card-text">Memoria 4 GB <br>Procesador Intel Celeron N4100 <br>Disco Sata 500 GB</p>
-				  <a href="#" class="btn btn-primary">Detalles</a>
-				</div>
-			  </div>
+    <section id="slider" class="owl-carousel main-slider">
+      <div class="item" style="background-image:url(images/slide1.jpg)">
+        <div class="container">
+          <div class="caption">
+            <h1><span>Soluciones <b>para mayoristas</b></span></h1>
+            <p><span>Somos especialistas en Software para Distribuidoras y Mayoristas</span></p>
+            <a href="#" class="btn btn-primary">Conocé más</a>
+          </div>
+        </div>
+      </div>
+        </section>
 
-			  <div class="card" style="width: 18rem;">
-				<img class="card-img-top" src="images/pc.webp" alt="Nootebook HP">
-				<div class="card-body">
-				  <h1 class="card-title">Notebook HP 240 G9</h1>
-				  <h3 class="card-sub-title">$90.999</h3>
-				  <p class="card-text">Memoria  GB <br>Procesador Intel I3 <br>Disco Sata 500 GB</p>
-				  <a href="#" class="btn btn-primary">Detalles</a>
-				</div>
-			  </div>
-		</section>
+        <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Notebook HP 240 G7</div>
+                 <div class="panel-body">
+                  <img src="images/pc.webp" alt="Nootebook HP" class="img-responsive">
+                  <h3 class="card-sub-title">$59.999</h3>
+                <p class="card-text">Memoria 4 GB <br>Procesador Intel Celeron N4100 <br>Disco Sata 500 GB</p></div>
+                   <div class="panel-footer"><a href="#" class="btn btn-primary">Detalles</a></div>
+            </div>
+          </div>
 
-        <nav aria-label="...">
-			<ul class="pagination">
-			  <li class="page-item"><a class="page-link" href="#">1</a></li>
-			  <li class="page-item"><a class="page-link" href="#">2</a></li>
-			  <li class="page-item"><a class="page-link" href="#">3</a></li>
-			</ul>
-		</nav>
-
-
-		<section class="info-box">
-			<div class="container">
-				<h1>Resolvemos todo el circuito comercial de empresas <b>de distribución de productos de consumo masivo.</h1>
-				<p>Conocemos los puntos críticos de su negocio y sabemos cómo solucionarlos.</p>
-				
-			</div>	
-		</section>
-	
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-								<p class="copy">© Softech 2021 | Todos los Derechos Reservados</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Notebook HP 240 G7</div>
+                 <div class="panel-body">
+                  <img src="images/pc.webp" alt="Nootebook HP" class="img-responsive">>
+                  <h3 class="card-sub-title">$90.999</h3>
+                <p class="card-text">Memoria 8 GB <br>Procesador Intel i3 N4100 <br>Disco Sata 500 GB</p></div>
+                   <div class="panel-footer"><a href="#" class="btn btn-primary">Detalles</a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Notebook HP 240 G7</div>
+                 <div class="panel-body">
+                  <img src="images/pc.webp" alt="Nootebook HP" class="img-responsive">>
+                  <h3 class="card-sub-title">$90.999</h3>
+                <p class="card-text">Memoria 8 GB <br>Procesador Intel i3 N4100 <br>Disco Sata 500 GB</p></div>
+                   <div class="panel-footer"><a href="#" class="btn btn-primary">Detalles</a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Notebook HP 240 G7</div>
+                 <div class="panel-body">
+                  <img src="images/pc.webp" alt="Nootebook HP" class="img-responsive">>
+                  <h3 class="card-sub-title">$90.999</h3>
+                <p class="card-text">Memoria 8 GB <br>Procesador Intel i3 N4100 <br>Disco Sata 500 GB</p></div>
+                   <div class="panel-footer"><a href="#" class="btn btn-primary">Detalles</a></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <div class="text-center">
+      <ul class="pagination pagination-large">
+      <li class="disabled"><span>«</span></li>
+      <li class="active"><span>1</span></li>
+      <li><a href="#page2">2</a></li>
+      <li><a href="#page3">3</a></li>
+      <li><a href="#page4">4</a></li>
+      <li><a href="#page5">5</a></li>
+      <li><a href="#page" rel="next">»</a></li> </ul>
+        </div>
+    
+        
+    <section class="info-box">
+      <div class="container">
+        <h1>Resolvemos todo el circuito comercial de empresas <b>de distribución de productos de consumo masivo.</h1>
+        <p>Conocemos los puntos críticos de su negocio y sabemos cómo solucionarlos.</p>
+        
+      </div>  
+    </section>
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <p class="copy">© Softech 2021 | Juan Pablo Millicay.</p>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>
