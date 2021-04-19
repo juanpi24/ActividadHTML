@@ -55,11 +55,13 @@ p {
     margin-bottom: 0px;
     border: 1px solid transparent;
 }
+
 .navbar-brand img.logo {
     display: inline-block;
 	width:auto;
 	height:30px;
 }
+
 .navbar-inverse {
     color: #fff;
     background-color: #fff;
@@ -134,7 +136,7 @@ p {
 
 /*info box*/
 .info-box {
-	padding:60px 0;
+	padding:10px 0;
 	text-align:center;
 }
 .info-box h1{
@@ -166,3 +168,8 @@ footer p.copy {
 	color:#0399C7;
 }
 
+#mapid { 
+	height: 450px;
+	width: 100%;
+	text-align:center;
+}

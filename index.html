@@ -12,9 +12,15 @@
    <!-- css -->      
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
   <!-- scripts -->
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   
 </head>
 <body>
@@ -31,6 +37,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt="Softech, Tecnología Informática"></a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -135,6 +142,15 @@
         
       </div>  
     </section>
+
+    <section class="info-box">
+      <div class="container">
+      	<div class="col-md-12 col-lg-12">
+      		<h1><b>Ubicación</h1>
+    		 <div id="mapid"></div>
+     	</div>  
+ 	</div>
+    </section>
   
     <footer>
       <div class="container">
@@ -143,5 +159,28 @@
         </div>
       </div>
     </footer>
+
+    <script>
+    //Inicializar el mapa
+	var mymap = L.map('mapid').setView([-29.4299009,-66.8709593], 13);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+	//Agregar un marcador
+    var marcador = L.marker([-29.4299009,-66.8709593]).addTo(mymap);
+    
+    //Agregar popup al marcador
+    marcador.bindPopup("SofTech - Av. Carlos Menem").openPopup();
+
+	//Agregar un Zoom
+	L.control.scale().addTo(map);
+
+</script>
 </body>
 </html>
